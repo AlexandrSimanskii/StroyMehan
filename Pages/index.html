@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="/src/images/icons/rane.png" />
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <title>Строймеханизация</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header-nav">
+          <h1 class="header-title">Строймеханизация</h1>
+
+          <ul class="header-list">
+            <li class="header-list__item header-list__item--active">Главная</li>
+            <li class="header-list__item">Услуги</li>
+            <li class="header-list__item">О нас</li>
+            <li class="header-list__item">Контакты</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="swiper">
+        <swiper-container
+          class="mySwiper"
+          pagination="true"
+          pagination-clickable="true"
+          navigation="true"
+          space-between="30"
+          centered-slides="true"
+          autoplay-delay="4000"
+          autoplay-disable-on-interaction="false"
+        >
+          <swiper-slide
+            ><img
+              src="https://os1.ru/article/24735-bashennye-krany-na-stroyploshchadke-na-fone-neba/000.jpg"
+              alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img
+              src="/src/images/image/beautiful-view-of-a-construction-site-in-a-city-during-sunset.jpg"
+              alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img
+              src="/src/images/image/industrial-crane-on-blue-sky.jpg"
+              alt=""
+          /></swiper-slide>
+        </swiper-container>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

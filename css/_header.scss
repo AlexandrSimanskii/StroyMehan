@@ -1,0 +1,23 @@
+.header {
+  padding: 30px;
+  background-color: aliceblue;
+  &-title {
+    font-size: 40px;
+    font-weight: 900;
+  }
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-list {
+    display: flex;
+    column-gap: 40px;
+    font-size: 24px;
+    &__item {
+      &--active {
+        color: rgb(249, 56, 18);
+      }
+    }
+  }
+}
