@@ -9,11 +9,9 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
     <link rel="shortcut icon" href="/src/images/icons/rane.png" />
+
+    <link rel="stylesheet" href="/css/swiper.css" />
     <link rel="stylesheet" href="/css/main.css" />
 
     <title>Строймеханизация</title>
@@ -37,35 +35,64 @@
       <div class="swiper">
         <swiper-container
           class="mySwiper"
-          pagination="true"
-          pagination-clickable="true"
-          navigation="true"
+          loop="true"
           space-between="30"
           centered-slides="true"
           autoplay-delay="4000"
           autoplay-disable-on-interaction="false"
         >
-          <swiper-slide
-            ><img
-              src="https://os1.ru/article/24735-bashennye-krany-na-stroyploshchadke-na-fone-neba/000.jpg"
-              alt=""
-          /></swiper-slide>
-          <swiper-slide
-            ><img
-              src="/src/images/image/beautiful-view-of-a-construction-site-in-a-city-during-sunset.jpg"
-              alt=""
-          /></swiper-slide>
-          <swiper-slide
-            ><img
-              src="/src/images/image/industrial-crane-on-blue-sky.jpg"
-              alt=""
-          /></swiper-slide>
-        </swiper-container>
+          <swiper-slide>
+            <div class="swiper-first">
+              <p class="swiper-first_text">sdffsfd</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="swiper-second">
+              <p class="swiper-second_text">sdffsfd</p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="swiper-third">
+              <p class="swiper-third_text">sdffsfd</p>
+            </div>
+          </swiper-slide></swiper-container
+        >
       </div>
     </main>
+    <footer class="footer">
+      <ul class="footer-items">
+        <li class="footer-item">
+          <h3 class="footer-item__title">О нас</h3>
+          <p>
+            40 лет опыта Мы снова и снова доказывали, что все можно сделать
+            правильно и в кратчайшие сроки. Когда к нам приходят клиенты с
+            особыми потребностями, мы не видим проблем, мы видим «возможности
+            проявить себя».
+          </p>
+        </li>
+        <li>
+          <h3 class="footer-item__title">Общая информация</h3>
+          <address class="footer-item__adress">
+            Московский пр., 186, Калининград, Калининградская обл., 236016
+          </address>
+          <p>Часы работы: Закрыто ⋅ Откроется в 09:00 (пн)</p>
+          <p>Телефон: 8 (401) 246-08-10</p>
+        </li>
+        <li class="footer-item">
+          <h3 class="footer-item__title">Адрес</h3>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
-
+          <iframe
+            class="footer-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.0316690380746!2d20.55142847655868!3d54.70906597189624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e3167c05bb5da9%3A0x452465f542e340d2!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0L_RgC4sIDE4Niwg0JrQsNC70LjQvdC40L3Qs9GA0LDQtCwg0JrQsNC70LjQvdC40L3Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4sIDIzNjAxNg!5e0!3m2!1sru!2sru!4v1698007867197!5m2!1sru!2sru"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </li>
+      </ul>
+    </footer>
+    <script src="/swiper.min.js"></script>
     <script src="/script.js"></script>
   </body>
 </html>

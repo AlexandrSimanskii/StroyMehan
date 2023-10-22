@@ -1,6 +1,7 @@
 .header {
   padding: 30px;
-  background-color: aliceblue;
+  background-color: $color_main;
+  color: $color;
   &-title {
     font-size: 40px;
     font-weight: 900;
