@@ -12,9 +12,26 @@
     display: flex;
     column-gap: 40px;
     font-size: 24px;
+
     &__item {
+      position: relative;
+      cursor: pointer;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        height: 1px;
+
+        background-color: rgb(249, 160, 18);
+        transition: 1s;
+      }
+      &:hover::before {
+        width: 100%;
+      }
       &--active {
-        color: rgb(249, 56, 18);
+        color: rgb(249, 160, 18);
       }
     }
   }
