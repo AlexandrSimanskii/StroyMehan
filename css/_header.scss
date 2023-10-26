@@ -2,7 +2,16 @@
   padding: 30px;
   background-color: $color_main;
   color: $color;
-
+  &-logo {
+    cursor: pointer;
+    // background: linear-gradient(45deg, $color-theme, #f0f0f0);
+    // background-size: 200% 200%;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // color: transparent;
+    // // text-fill-color: transparent;
+    // animation: logo 5s linear infinite;
+  }
   &-nav {
     display: flex;
     justify-content: space-between;
@@ -34,5 +43,16 @@
         color: rgb(249, 160, 18);
       }
     }
+  }
+}
+@keyframes logo {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
