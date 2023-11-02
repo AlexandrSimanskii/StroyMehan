@@ -1,0 +1,21 @@
+.achievements {
+  margin-bottom: 50px;
+  &-inner {
+    position: relative;
+    background-size: cover;
+    background-position: top;
+
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   bottom: 0;
+    //   left: 0;
+    //   right: 0;
+    //   background-color: rgba(#000, 0.6);
+    // }
+  }
+}

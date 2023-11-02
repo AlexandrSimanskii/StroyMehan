@@ -234,4 +234,16 @@ swiper-slide {
 .footer-item__title {
   padding-bottom: 30px;
   font-size: 24px;
+}
+
+.achievements {
+  margin-bottom: 50px;
+}
+.achievements-inner {
+  position: relative;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
