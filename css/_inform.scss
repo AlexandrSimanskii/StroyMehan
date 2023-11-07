@@ -1,0 +1,47 @@
+.inform {
+  margin-bottom: 50px;
+  &__inner {
+    display: flex;
+    column-gap: 100px;
+  }
+  &-box {
+    max-width: 50%;
+    height: 100%;
+    overflow: hidden;
+
+    &__img {
+      width: 100%;
+      border-radius: 1px;
+      transition: 1.5s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &-group {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 50%;
+    &__title {
+      margin-bottom: 30px;
+      color: $color-main;
+    }
+    &__img {
+      background-color: $color-main;
+      color: $color;
+      max-width: 180px;
+      align-self: flex-end;
+      border: none;
+      padding: 7px 10px;
+      border-radius: 5px;
+      font-size: 24px;
+      transition: 1s;
+      &:hover{
+        color: $color-theme;
+
+      }
+    }
+  }
+}

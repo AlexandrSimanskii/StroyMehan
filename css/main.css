@@ -2,13 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
   font-family: "EB Garamond", serif;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  margin-bottom: 100px;
 }
 
 .container {
   max-width: 1260px;
   margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
 }
 
 p {
@@ -29,7 +40,7 @@ h2 {
 
 .header {
   padding: 30px;
-  background-color: #1c1c11;
+  background-color: #373737;
   color: #e8e0e0;
 }
 .header-logo {
@@ -109,7 +120,7 @@ h2 {
   right: 700px;
   font-size: 24px;
   transition: 0.7s;
-  color: #1c1c11;
+  color: #373737;
   animation: swiper-btn 2s ease-in-out forwards;
   animation-delay: 2s;
   cursor: pointer;
@@ -152,12 +163,129 @@ swiper-slide {
   pointer-events: none;
 }
 
+@keyframes swiper-title {
+  from {
+    top: 700px;
+    font-size: 0;
+  }
+  to {
+    top: 0px;
+  }
+}
+@keyframes swiper-btn {
+  from {
+    font-size: 0;
+  }
+  to {
+    right: 0px;
+  }
+}
+.footer {
+  color: #e8e0e0;
+  background-color: #373737;
+  padding: 10px 50px;
+}
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-map {
+  border-radius: 3px;
+  width: 100%;
+  padding-bottom: 16px;
+}
+.footer-item {
+  max-width: 320px;
+}
+.footer-item__title {
+  padding-bottom: 30px;
+  font-size: 24px;
+}
+
+.achievement {
+  margin-bottom: 50px;
+  position: relative;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+  color: #e8e0e0;
+}
+.achievement::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.achievement-list {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.achievement-list__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.achievement-items__img {
+  margin-bottom: 10px;
+}
+.achievement-items__img:hover {
+  opacity: 0.8;
+}
+.achievement-items__title {
+  font-size: 30px;
+}
+.achievement-items__text {
+  font-size: 18px;
+}
+
+.models {
+  margin-bottom: 50px;
+}
+.models h2 {
+  margin-bottom: 20px;
+}
+
+.model {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.model-group {
+  border: 1px solid rgb(0, 0, 0);
+}
+.model-group__title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+}
+.model-group__img {
+  border-radius: 1px;
+  width: 350px;
+  height: 300px;
+}
+.model-list {
+  list-style: disc;
+  font-size: 20px;
+  transform: translateX(30px);
+}
+
 .inform {
   margin-bottom: 50px;
 }
 .inform__inner {
   display: flex;
-  column-gap: 30px;
+  column-gap: 100px;
 }
 .inform-box {
   max-width: 50%;
@@ -179,71 +307,19 @@ swiper-slide {
 }
 .inform-group__title {
   margin-bottom: 30px;
-  color: #1c1c11;
+  color: #373737;
 }
-
-.works {
-  margin-bottom: 50px;
-}
-.works-list {
-  display: flex;
-  column-gap: 20px;
-  justify-content: space-between;
-}
-.works-list__el {
-  width: 400px;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-@keyframes swiper-title {
-  from {
-    top: 700px;
-    font-size: 0;
-  }
-  to {
-    top: 0px;
-  }
-}
-@keyframes swiper-btn {
-  from {
-    font-size: 0;
-  }
-  to {
-    right: 0px;
-  }
-}
-.footer {
+.inform-group__img {
+  background-color: #373737;
   color: #e8e0e0;
-  background-color: #1c1c11;
-  padding: 10px 50px;
-}
-.footer-items {
-  display: flex;
-  justify-content: space-between;
-}
-.footer-map {
-  border-radius: 3px;
-  width: 100%;
-  padding-bottom: 16px;
-}
-.footer-item {
-  max-width: 320px;
-}
-.footer-item__title {
-  padding-bottom: 30px;
+  max-width: 180px;
+  align-self: flex-end;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 5px;
   font-size: 24px;
+  transition: 1s;
 }
-
-.achievements {
-  margin-bottom: 50px;
-}
-.achievements-inner {
-  position: relative;
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  height: 350px;
-  width: 100%;
+.inform-group__img:hover {
+  color: rgb(249, 160, 18);
 }/*# sourceMappingURL=main.css.map */
