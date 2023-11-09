@@ -203,6 +203,7 @@ swiper-slide {
 }
 
 .achievement {
+  overflow: hidden;
   margin-bottom: 50px;
   position: relative;
   background-size: cover;
@@ -220,13 +221,18 @@ swiper-slide {
   height: 100%;
 }
 .achievement-list {
-  position: relative;
+  position: absolute;
+  top: 500px;
+  transform: translateY(-50%);
   z-index: 2;
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+.achievement-list--animate {
+  animation: toTopAchievementList 2s forwards;
 }
 .achievement-list__items {
   display: flex;
@@ -247,6 +253,14 @@ swiper-slide {
   font-size: 18px;
 }
 
+@keyframes toTopAchievementList {
+  from {
+    top: 500px;
+  }
+  to {
+    top: 50%;
+  }
+}
 .models {
   margin-bottom: 50px;
 }

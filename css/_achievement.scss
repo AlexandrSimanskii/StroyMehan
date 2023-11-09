@@ -1,4 +1,5 @@
 .achievement {
+  overflow: hidden;
   margin-bottom: 50px;
   position: relative;
   background-size: cover;
@@ -16,13 +17,19 @@
   }
 
   &-list {
-    position: relative;
+    position: absolute;
+    top: 500px;
+    transform: translateY(-50%);
     z-index: 2;
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    &--animate {
+      animation: toTopAchievementList 2s forwards;
+    }
     &__items {
       display: flex;
       flex-direction: column;
@@ -33,10 +40,10 @@
   &-items {
     &__img {
       margin-bottom: 10px;
-      
-     &:hover{
-      opacity: 0.8;
-     }
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
     &__title {
       font-size: 30px;
@@ -44,5 +51,14 @@
     &__text {
       font-size: 18px;
     }
+  }
+}
+
+@keyframes toTopAchievementList {
+  from {
+    top: 500px;
+  }
+  to {
+    top: 50%;
   }
 }
