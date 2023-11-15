@@ -34,8 +34,14 @@ h1 {
 
 h2 {
   color: #696969;
-  text-transform: uppercase;
   font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
 }
 
 .header {
@@ -90,7 +96,7 @@ h2 {
 }
 .swiper {
   position: relative;
-  height: calc(100vh - 200px);
+  height: calc(100vh - 100px);
   margin-bottom: 50px;
 }
 .swiper-info {
@@ -309,6 +315,8 @@ swiper-slide {
 .inform-box__img {
   width: 100%;
   border-radius: 1px;
+  border: 1px solid #373737;
+  border-radius: 0 0 20% 0;
   transition: 1.5s;
 }
 .inform-box__img:hover {
@@ -322,6 +330,18 @@ swiper-slide {
 .inform-group__title {
   margin-bottom: 30px;
   color: #373737;
+}
+.inform-group__title-span {
+  position: relative;
+}
+.inform-group__title-span::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(249, 160, 18);
 }
 .inform-group__img {
   background-color: #373737;
