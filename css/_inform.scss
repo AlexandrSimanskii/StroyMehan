@@ -8,12 +8,12 @@
     max-width: 50%;
     height: 100%;
     overflow: hidden;
-
+    border: 1px solid $color-main;
+    border-radius: 0 0 20% 0;
     &__img {
       width: 100%;
-      border-radius: 1px;
-      border: 1px solid $color-main;
-    border-radius: 0 0 20% 0;
+     
+      
       transition: 1.5s;
       &:hover {
         transform: scale(1.2);
@@ -27,7 +27,6 @@
 
     max-width: 50%;
     &__title {
-      
       margin-bottom: 30px;
       color: $color-main;
       &-span {

@@ -49,15 +49,18 @@ window.addEventListener("scroll", checkAndIncreaseQuantity, { passive: true });
 
 checkAndIncreaseQuantity.hasIncreasedQuality = false;
 
-//End  achievement section animation
+// End  achievement section animation
+
+// Header animation
 
 const headerListItem = [...document.querySelectorAll(".header-list__item")];
 headerListItem.forEach((item) => {
   item.addEventListener("click", () => {
-    
     headerListItem.forEach((otherItem) => {
       otherItem.classList.remove("header-list__item--active");
     });
     item.classList.add("header-list__item--active");
   });
 });
+
+//End Header animation
