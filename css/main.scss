@@ -38,6 +38,7 @@ h2 {
 }
 
 a {
+  color: $color;
   text-decoration: none;
   &:visited {
     color: inherit;

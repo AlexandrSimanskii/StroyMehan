@@ -1,7 +1,7 @@
 .swiper {
   position: relative;
   height: calc(100vh - 100px);
-  
+  padding-bottom: 30px;
   margin-bottom: 50px;
 
   &-info {
@@ -11,7 +11,7 @@
     top: 70%;
     left: 100px;
     z-index: 10;
-    max-width: 500px;
+
     &__title {
       color: $color;
       margin-bottom: 20px;
@@ -81,7 +81,6 @@ swiper-slide {
   }
 }
 
-
 @keyframes swiper-title {
   from {
     top: 700px;
@@ -99,5 +98,30 @@ swiper-slide {
 
   to {
     right: 0px;
+  }
+}
+@media (max-width: 650px) {
+  .swiper {
+    &-info {
+      left: 50%;
+      transform: translateX(-50%);
+      &__title {
+        font-size: 24px;
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .swiper {
+    &-info {
+      bottom:  -500px;
+      left: 50%;
+      transform: translateX(-50%);
+     
+      &__btn{
+        
+        font-size: 16px;
+      }
+    }
   }
 }

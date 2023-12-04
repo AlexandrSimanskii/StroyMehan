@@ -94,6 +94,7 @@ a:visited {
 .header-inner {
   display: flex;
   justify-content: space-between;
+  column-gap: 10px;
 }
 .header-logo {
   cursor: pointer;
@@ -102,6 +103,10 @@ a:visited {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header-menu {
+  width: 42px;
+  display: none;
 }
 .header-list {
   overflow: hidden;
@@ -159,6 +164,49 @@ a:visited {
   }
   to {
     left: 700px;
+  }
+}
+@media (max-width: 1050px) {
+  .header-logo {
+    font-size: 42px;
+  }
+}
+@media (max-width: 950px) {
+  .header-list {
+    display: none;
+  }
+  .header-menu {
+    display: block;
+  }
+}
+@media (max-width: 650px) {
+  .header-logo {
+    font-size: 32px;
+  }
+  .header-menu {
+    width: 32px;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    padding: 20px;
+  }
+  .header-logo {
+    font-size: 24px;
+  }
+  .header-menu {
+    width: 24px;
+  }
+}
+@media (max-width: 350px) {
+  .header {
+    padding: 16px;
+  }
+  .header-logo {
+    font-size: 20px;
+  }
+  .header-menu {
+    width: 20px;
   }
 }
 .footer {

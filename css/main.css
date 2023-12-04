@@ -38,6 +38,7 @@ h2 {
 }
 
 a {
+  color: #e8e0e0;
   text-decoration: none;
 }
 a:visited {
@@ -52,6 +53,7 @@ a:visited {
 .header-inner {
   display: flex;
   justify-content: space-between;
+  column-gap: 10px;
 }
 .header-logo {
   cursor: pointer;
@@ -60,6 +62,10 @@ a:visited {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header-menu {
+  width: 42px;
+  display: none;
 }
 .header-list {
   overflow: hidden;
@@ -119,9 +125,53 @@ a:visited {
     left: 700px;
   }
 }
+@media (max-width: 1050px) {
+  .header-logo {
+    font-size: 42px;
+  }
+}
+@media (max-width: 950px) {
+  .header-list {
+    display: none;
+  }
+  .header-menu {
+    display: block;
+  }
+}
+@media (max-width: 650px) {
+  .header-logo {
+    font-size: 32px;
+  }
+  .header-menu {
+    width: 32px;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    padding: 20px;
+  }
+  .header-logo {
+    font-size: 24px;
+  }
+  .header-menu {
+    width: 24px;
+  }
+}
+@media (max-width: 350px) {
+  .header {
+    padding: 16px;
+  }
+  .header-logo {
+    font-size: 20px;
+  }
+  .header-menu {
+    width: 20px;
+  }
+}
 .swiper {
   position: relative;
   height: calc(100vh - 100px);
+  padding-bottom: 30px;
   margin-bottom: 50px;
 }
 .swiper-info {
@@ -131,7 +181,6 @@ a:visited {
   top: 70%;
   left: 100px;
   z-index: 10;
-  max-width: 500px;
 }
 .swiper-info__title {
   color: #e8e0e0;
@@ -209,6 +258,25 @@ swiper-slide {
   }
   to {
     right: 0px;
+  }
+}
+@media (max-width: 650px) {
+  .swiper-info {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .swiper-info__title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 450px) {
+  .swiper-info {
+    bottom: -500px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .swiper-info__btn {
+    font-size: 16px;
   }
 }
 .footer {
